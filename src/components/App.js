@@ -1,11 +1,8 @@
-import '../styles/App.css';
-
+import NavBar from './NavBar'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Hello from react
-      </header>
+    <div>      
+        <NavBar />
     </div>
   );
 }

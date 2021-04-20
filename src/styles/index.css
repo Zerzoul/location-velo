@@ -11,3 +11,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*Header-navbar*/
+header{
+  box-shadow: 0px 3px 8px rgb(0 0 0 / 50%);
+
+}
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav-header-logo img{
+  height: 150px;
+}
+.nav-header-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+.nav-header-link a{
+  text-align: center;
+  text-decoration: none;
+  color: lightsalmon;
+  padding: 10px;
+}
+.nav-header-link a:hover{
+  color: white;
+  background-color: lightsalmon;
+  border-radius: 8px;
+}
