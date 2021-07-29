@@ -4,7 +4,10 @@ function App() {
   return (
     <div>      
         <NavBar />
-        <SlideBar />
+        <div>
+          <SlideBar />
+        </div>
+
     </div>
   );
 }

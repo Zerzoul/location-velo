@@ -1,9 +1,24 @@
+import { carouselItems } from '../data/carsouelItems.js';
+import CarouselContainer from './CarouselContainer.js'
+import Carousel from 'react-bootstrap/Carousel'
+
 const SlideBar = () => {
     return (
-        <div className="slide-bar">
-            <h2>SlideBar</h2>
-        </div>
-    );
+        <Carousel>
+            {
+                carouselItems.map(({id, description, img}) => 
+                    (   
+                        <Carousel.Item>
+                            <CarouselContainer 
+                                description={description}
+                                img={img}
+                            />
+                        </Carousel.Item>
+                    )
+                )
+            }
+      </Carousel>
+    )
 }
  
 export default SlideBar;
