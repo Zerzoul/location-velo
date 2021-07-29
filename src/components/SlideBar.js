@@ -1,23 +1,29 @@
 import { carouselItems } from '../data/carsouelItems.js';
 import CarouselContainer from './CarouselContainer.js'
-import Carousel from 'react-bootstrap/Carousel'
+import { Container, Row, Carousel } from 'react-bootstrap';
 
+const intervalTimer = 2000
 const SlideBar = () => {
     return (
-        <Carousel>
-            {
-                carouselItems.map(({id, description, img}) => 
-                    (   
-                        <Carousel.Item>
-                            <CarouselContainer 
-                                description={description}
-                                img={img}
-                            />
-                        </Carousel.Item>
-                    )
-                )
-            }
-      </Carousel>
+        <Container fluid >
+            <Row >
+                <Carousel interval={intervalTimer} indicators={false} hover className="m-0 p-0">
+                    {
+                        carouselItems.map(({id, description, img}) => 
+                            (   
+                                <Carousel.Item>
+                                    <CarouselContainer 
+                                        description={description}
+                                        img={img}
+                                    />
+                                </Carousel.Item>
+                            )
+                        )
+                    }
+                </Carousel>
+            </Row>
+        </Container>
+        
     )
 }
  
