@@ -51,3 +51,11 @@ code {
   text-decoration-line: underline;
   font-weight: bold;
 }
+
+.content-slidebar{
+  max-height: 500px;
+  overflow: hidden;
+}
+.carousel-container{
+  height: 500px;
+}
