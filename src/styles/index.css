@@ -59,3 +59,7 @@ code {
 .carousel-container{
   height: 500px;
 }
+.map-container{
+  height:500px;
+  background:rgb(0, 0, 255, 22%)
+}
