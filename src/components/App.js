@@ -4,10 +4,7 @@ function App() {
   return (
     <div>      
         <NavBar />
-        <div className="content-slidebar">
-          <SlideBar />
-        </div>
-
+        <SlideBar />
     </div>
   );
 }

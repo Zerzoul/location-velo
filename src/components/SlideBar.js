@@ -1,10 +1,11 @@
 import { carouselItems } from '../data/carsouelItems.js';
 import CarouselContainer from './CarouselContainer.js'
-import { Container, Row, Carousel } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
 const intervalTimer = 2000
 const SlideBar = () => {
-    return (
+    return (    
+        <div className="content-slidebar">
                 <Carousel interval={intervalTimer} indicators={false} hover="hover={value.toString()}" className="m-0 p-0 carousel-container">
                     {
                         carouselItems.map(({id, description, img}) => 
@@ -19,6 +20,8 @@ const SlideBar = () => {
                         )
                     }
                 </Carousel>
+        </div>
+
         
     )
 }
